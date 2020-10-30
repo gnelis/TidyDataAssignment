@@ -69,4 +69,4 @@ grouped_set<-group_by(complete_set,Subject,Activity)
 new_set<-summarise_all(grouped_set,mean)
 
 ##Writing tidy set
-write.table(new_set, "New_Tidy_Set.txt")
+write.table(new_set, "New_Tidy_Set.txt", row.names = FALSE)
